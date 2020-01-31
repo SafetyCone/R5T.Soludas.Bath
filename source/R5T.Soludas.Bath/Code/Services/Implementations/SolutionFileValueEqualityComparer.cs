@@ -22,11 +22,11 @@ namespace R5T.Soludas.Bath
 
             if(isEqual)
             {
-                this.HumanOutput.WriteLine("Solution files NOT equal...");
+                this.HumanOutput.WriteLine("Solution files are equal.");
             }
             else
             {
-                this.HumanOutput.WriteLine("Solution files are equal.");
+                this.HumanOutput.WriteLine("Solution files NOT equal...");
             }
 
             return isEqual;
