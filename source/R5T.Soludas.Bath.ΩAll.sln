@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Soludas.Bath.Constructi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.Soludas.Bath.Testing", "R5T.Soludas.Bath.Testing\R5T.Soludas.Bath.Testing.csproj", "{9195BC3D-A7C7-4BAE-8336-7D02DEABCBB7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Dependencies", "_Dependencies", "{6B865BB8-ABA4-4D6A-9F51-C88F5CF3DB29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "R5T.T0064", "..\..\R5T.T0064\source\R5T.T0064\R5T.T0064.csproj", "{713FAECE-A39A-473B-82F1-F725E60F87A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +62,20 @@ Global
 		{9195BC3D-A7C7-4BAE-8336-7D02DEABCBB7}.Release|x64.Build.0 = Release|Any CPU
 		{9195BC3D-A7C7-4BAE-8336-7D02DEABCBB7}.Release|x86.ActiveCfg = Release|Any CPU
 		{9195BC3D-A7C7-4BAE-8336-7D02DEABCBB7}.Release|x86.Build.0 = Release|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Debug|x64.Build.0 = Debug|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Debug|x86.Build.0 = Debug|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Release|x64.ActiveCfg = Release|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Release|x64.Build.0 = Release|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Release|x86.ActiveCfg = Release|Any CPU
+		{713FAECE-A39A-473B-82F1-F725E60F87A5}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{713FAECE-A39A-473B-82F1-F725E60F87A5} = {6B865BB8-ABA4-4D6A-9F51-C88F5CF3DB29}
 	EndGlobalSection
 EndGlobal

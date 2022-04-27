@@ -1,13 +1,19 @@
-﻿using System;
+using System;
 
 using R5T.Bath;
 using R5T.Cambridge.Types;
+using R5T.Vandalia;
 using R5T.Vandalia.Bath;
+
+using R5T.T0064;
 
 
 namespace R5T.Soludas.Bath
 {
-    public class SolutionFileValueEqualityComparer : HumanOutputValueEqualityComparer<SolutionFile>
+    [ServiceImplementationMarker]
+    public class SolutionFileValueEqualityComparer : HumanOutputValueEqualityComparer<SolutionFile>,
+        IValueEqualityComparer<SolutionFile>,
+        IServiceImplementation
     {
         public SolutionFileValueEqualityComparer(IHumanOutput humanOutput)
             : base(humanOutput)
