@@ -16,7 +16,7 @@ namespace R5T.Soludas.Bath
         /// Adds the <see cref="SolutionFileValueEqualityComparer"/> implementation of <see cref="IValueEqualityComparer{T}"/>, T: <see cref="SolutionFile"/>, as a <see cref="ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceCollection AddBathVisualStudioSolutionFileValueEqualityComparer(this IServiceCollection services,
-            ServiceAction<IHumanOutput> addHumanOutput)
+            IServiceAction<IHumanOutput> addHumanOutput)
         {
             services
                 .AddSingleton<IValueEqualityComparer<SolutionFile>, SolutionFileValueEqualityComparer>()
@@ -30,7 +30,7 @@ namespace R5T.Soludas.Bath
         /// Adds the <see cref="SolutionFileValueEqualityComparer"/> implementation of <see cref="IValueEqualityComparer{T}"/>, T: <see cref="SolutionFile"/>, as a <see cref="ServiceLifetime.Singleton"/>.
         /// </summary>
         public static ServiceAction<IValueEqualityComparer<SolutionFile>> AddBathVisualStudioSolutionFileValueEqualityComparerAction(this IServiceCollection services,
-            ServiceAction<IHumanOutput> addHumanOutput)
+            IServiceAction<IHumanOutput> addHumanOutput)
         {
             var serviceAction = new ServiceAction<IValueEqualityComparer<SolutionFile>>(() => services.AddBathVisualStudioSolutionFileValueEqualityComparer(
                 addHumanOutput));
